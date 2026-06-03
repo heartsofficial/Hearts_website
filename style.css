@@ -24,7 +24,16 @@ margin-bottom:25px;
 }
 
 .logo img{
-width:180px;
+width:220px;
+max-width:100%;
+height:auto;
+transition: width 0.3s ease;
+}
+
+@media(min-width:768px){
+.logo img{
+width:300px;
+}
 }
 
 nav{
