@@ -223,7 +223,7 @@ box-shadow: 0 16px 35px rgba(243, 166, 208, 0.35);
 }
 
 footer{
-padding:80px 20px;
+padding:40px 20px;
 border-top:1px solid rgba(0,0,0,.1);
 }
 
@@ -242,18 +242,18 @@ font-size:32px;
 }
 
 .team{
-margin-top:40px;
+margin-top:20px;
 }
 
 .team p{
-font-size:28px;
+font-size:21px;
 color:#666;
-margin-bottom:25px;
+margin-bottom:12px;
 }
 
 .instagram{
 display:inline-block;
-margin-top:60px;
+margin-top:30px;
 font-size:45px;
 color:#777;
 transition:.3s;
