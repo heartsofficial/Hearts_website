@@ -9,9 +9,13 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,sans-serif;
+font-family: 'Inter', sans-serif;
 background:#c7d7e8;
 color:#111;
+}
+
+h1, h2, h3, .logo, .hearts {
+font-family: 'Outfit', sans-serif;
 }
 
 header{
@@ -52,7 +56,32 @@ nav a{
 color:#fff;
 text-decoration:none;
 font-size:18px;
-font-weight:500;
+font-weight:600;
+padding: 4px 12px;
+border-radius: 20px;
+transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+position: relative;
+}
+
+nav a::after {
+content: '';
+position: absolute;
+bottom: -2px;
+left: 50%;
+width: 0;
+height: 2px;
+background: #fff;
+transition: all 0.3s ease;
+transform: translateX(-50%);
+}
+
+nav a:hover {
+transform: translateY(-2px);
+text-shadow: 0 2px 10px rgba(255, 255, 255, 0.4);
+}
+
+nav a:hover::after {
+width: 60%;
 }
 
 .hero{
@@ -114,11 +143,19 @@ overflow:hidden;
 }
 
 .slide{
-display:none;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+opacity: 0;
+transition: opacity 0.8s ease-in-out;
+z-index: 1;
 }
 
 .slide.active{
-display:block;
+position: relative;
+opacity: 1;
+z-index: 2;
 }
 
 .slide img{
@@ -154,6 +191,13 @@ background:#f2c9df;
 border-radius:25px;
 padding:25px;
 margin-bottom:30px;
+transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+box-shadow: 0 4px 15px rgba(243, 166, 208, 0.15);
+}
+
+.card:hover{
+transform: translateY(-8px);
+box-shadow: 0 16px 35px rgba(243, 166, 208, 0.35);
 }
 
 .card h2{
@@ -164,9 +208,10 @@ margin-bottom:30px;
 
 .card p{
     font-size: 22px;
-    line-height: 1.6;
+    line-height: 1.8;
     margin-bottom: 12px;
     margin-left: 44px;
+    letter-spacing: 0.15em;
 }
 
 .card img{
