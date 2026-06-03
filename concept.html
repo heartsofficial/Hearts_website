@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hearts - Concept</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="images/標準字粉.png" alt="Hearts">
+  </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#home">Concept</a>
+    </nav>
+
+</header>
+
+<section id="home" class="hero">
+
+  <div class="slider">
+
+        <div class="slide active">
+            <img src="images/人物比例尺 _001.png" alt="">
+        </div>
+
+        <div class="slide">
+            <img src="images/01_Hearter_three_view_drawing.png" alt="">
+        </div>
+
+        <div class="slide">
+            <img src="images/01_Polly_three_view_graeing.png" alt="">
+        </div>
+
+        <div class="slide">
+            <img src="images/01_Phantom_thief_three_view_drawing.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+</section>
+
+<section id="about" class="about">
+
+  <div class="card">
+
+        <h2>Hearter</h2>
+    <p>
+            Mischievous, adorable, and clever,
+            he is the driving force of the entire story.
+      </p>
+
+      <img src="images/未命名的作品.png" alt="Hearter">
+
+    </div>
+
+  <div class="card">
+
+        <h2>Polly</h2>
+
+    <p>
+            The girl who put the necklace in her backpack
+            experienced an unexpected story while visiting
+            a museum.
+      </p>
+
+      <img src="images/未命名的作品 (2).png" alt="Polly">
+
+    </div>
+
+  <div class="card">
+
+        <h2>Phantom thief</h2>
+
+    <p>
+            To steal the necklace on display at the museum.
+      </p>
+
+      <img src="images/未命名的作品 (1).png" alt="Phantom thief">
+
+    </div>
+
+</section>
+
+<footer id="concept">
+
+    <div class="footer-title">
+
+        <img src="images/IMG_4658.PNG" alt="DMAC">
+
+        <h3>Production Team</h3>
+
+  </div>
+
+    <div class="team">
+
+        <p>Yu Hua,Huang</p>
+        <p>Lok Yin,Li</p>
+        <p>Yu Yuan,Lin</p>
+        <p>You Yu,Hou</p>
+
+    </div>
+
+    <a
+        href="https://instagram.com"
+        target="_blank"
+        class="instagram">
+
+        <i class="fa-brands fa-instagram"></i>
+
+    </a>
+
+</footer>
+
+<script>
+
+const slides=document.querySelectorAll(".slide");
+const dots=document.querySelectorAll(".dot");
+
+let current=0;
+
+function showSlide(index){
+
+slides.forEach(slide=>{
+slide.classList.remove("active");
+});
+
+dots.forEach(dot=>{
+dot.classList.remove("active");
+});
+
+slides[index].classList.add("active");
+dots[index].classList.add("active");
+
+}
+
+function nextSlide(){
+
+current++;
+
+if(current>=slides.length){
+current=0;
+}
+
+showSlide(current);
+
+}
+
+setInterval(nextSlide,3000);
+
+dots.forEach((dot,index)=>{
+
+dot.addEventListener("click",()=>{
+
+current=index;
+showSlide(current);
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
