@@ -328,5 +328,14 @@ font-size:24px;
 max-width:600px;
 }
 
-}@charset "UTF-8";
-/* CSS Document */
+}
+
+.copyright{
+text-align:center;
+margin-top:30px;
+font-size:14px;
+color:#777;
+display:block;
+width:100%;
+clear:both;
+}
