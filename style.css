@@ -352,6 +352,7 @@ width: 100%;
 .creators {
 margin-top: 25px;
 padding-top: 15px;
+margin-left: 44px;
 border-top: 1px dashed rgba(243, 166, 208, 0.4);
 text-align: left;
 }
