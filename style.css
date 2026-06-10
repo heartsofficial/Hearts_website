@@ -230,11 +230,13 @@ box-shadow: 0 16px 35px rgba(243, 166, 208, 0.35);
 footer{
 padding:40px 20px;
 border-top:1px solid rgba(0,0,0,.1);
+text-align:center;
 }
 
 .footer-title{
 display:flex;
 align-items:center;
+justify-content:center;
 gap:15px;
 }
 
@@ -248,12 +250,14 @@ width:70px;
 
 .team{
 margin-top:20px;
+text-align:center;
 }
 
 .team p{
 font-size:21px;
 color:#666;
 margin-bottom:12px;
+text-align:center;
 }
 
 .instagram{
@@ -302,11 +306,9 @@ font-size:70px;
 @media(min-width:1024px){
 
 .card{
-
 display:flex;
 align-items:center;
 justify-content:space-between;
-
 padding:40px;
 }
 
