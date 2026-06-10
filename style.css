@@ -333,9 +333,11 @@ max-width:600px;
 .copyright{
 text-align:center;
 margin-top:30px;
+padding-top:20px;
 font-size:14px;
 color:#777;
 display:block;
 width:100%;
 clear:both;
+border-top:1px solid rgba(0,0,0,.08);
 }
