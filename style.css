@@ -110,6 +110,7 @@ font-weight:400;
 margin-bottom:5px;
 color:#333;
 text-shadow: 0 2px 4px rgba(255,255,255,0.8);
+opacity: 0.65;
 }
 
 .hearts{
@@ -118,6 +119,7 @@ font-weight:900;
 letter-spacing:2px;
 margin:0;
 text-shadow: 0 2px 8px rgba(255,255,255,0.8);
+opacity: 0.65;
 }
 
 .video-container {
